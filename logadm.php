@@ -1,5 +1,5 @@
 <?php
-require 'configPDO.PHP';
+require 'configpdo.php';
 
 $email=$_GET['email'];
 $senha=$_GET['senha'];

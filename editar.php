@@ -1,10 +1,10 @@
 <?php
-require 'configPDO.php';
+require 'configpdo.php';
 
 $id = $_GET['id']; 
 
 
-$sql = $pdo->prepare("SELECT * FROM estoque WHERE id = :id");
+$sql = $pdo->prepare("SELECT * FROM medicamento WHERE id = :id");
 $sql->bindValue(':id', $id);
 $sql->execute();
 $produto = $sql->fetch(PDO::FETCH_ASSOC); 
@@ -19,6 +19,7 @@ if (!$produto) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylw2.css">
     <title>Editar Produto</title>
 </head>
 <body>

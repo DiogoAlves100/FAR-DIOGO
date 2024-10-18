@@ -1,5 +1,5 @@
 <?php 
-require 'configPDO.PHP';
+require 'configpdo.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -12,7 +12,7 @@ require 'configPDO.PHP';
 <body>
 <div class="container">
         <h1>Login</h1>
-        <form action="logadm.php" method="get">
+        <form action="cadastro.php" method="get">
             <div class="form-group">
                 <label for="username">Usuário:</label>
                 <input type="text" class="form-control" id="username" name="username" required>
