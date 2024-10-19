@@ -1,5 +1,5 @@
 <?php
-require 'configPDO.php';
+require 'configpdo.php';
 
 $id = $_GET['id']; 
 

@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: #f0f0f0;
+    background-image: url(https://cdn.pixabay.com/photo/2016/08/10/04/45/medicine-1582472_1280.jpg);
+    background-size: cover;
+  background-position: center;  
+  background-repeat: no-repeat; 
+}
+
+
+.container {
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; 
+}
+
+h1 {
+    text-align: center;
+    color: #ffb700; 
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    font-weight: bold; 
+    color: #343a40; 
+}
+
+.form-control {
+    border-radius: 5px; 
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s; 
+}
+
+.form-control:focus {
+    border-color: #ffb700;
+    box-shadow: 0 0 5px #ffb700(0, 123, 255, 0.5); 
+}
+
+.btn-primary {
+    width: 100%; 
+    border-radius: 5px; 
+    padding: 10px;
+    font-weight: bold; 
+}
+
+.btn-primary:hover {
+    background-color: #ffb700; 
+    border-color: #ffb700; 
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 15px; 
+    }
+}

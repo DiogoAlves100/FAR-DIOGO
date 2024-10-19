@@ -5,7 +5,7 @@ require 'configpdo.php';
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
-    $sql = $pdo->prepare("DELETE FROM medicamento WHERE id = :id");
+    $sql = $pdo->prepare("DELETE FROM medicamento  WHERE id = :id");
     $sql->bindValue(':id', $id);
 
     try {

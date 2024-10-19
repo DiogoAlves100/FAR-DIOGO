@@ -9,9 +9,10 @@ require 'configpdo.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Cadastro de Medicamento</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+
     <form action="inseri.php" method="post">
         <h1>Cadastro de Medicamento</h1>
         <div class="form-group">
@@ -42,6 +43,7 @@ require 'configpdo.php';
             <input type="date" class="form-control" id="data_validade" name="data_validade" required>
         </div>
         <button type="submit">Cadastrar Medicamento</button>
+        
     </form>
 </body>
 </html>
