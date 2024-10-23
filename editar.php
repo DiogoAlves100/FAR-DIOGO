@@ -60,7 +60,7 @@ if (isset($_GET['id'])) {
 <body>
     <div class="container mt-5">
         <h1>Editar Medicamento</h1>
-        <form method="post" >
+        <form method="post" action="./inseri.php">
             <div class="form-group">
                 <label for="nome">Nome do Medicamento:</label>
                 <input type="text" class="form-control" id="produto" name="produto" value="<?php echo htmlspecialchars($medicamento['produto']); ?>" required>

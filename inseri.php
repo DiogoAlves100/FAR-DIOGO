@@ -1,6 +1,5 @@
 <?php
-require './configpdo.php';
-
+require 'configpdo.php';
 
 $nomeProduto = $_POST['produto'];
 $quantidadeProduto = $_POST['quantidade'];

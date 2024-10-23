@@ -1,6 +1,7 @@
 <?php
 require 'configpdo.php';
 
+
 $sql = "SELECT * FROM medicamento";
 $stmt = $pdo->query($sql);
 ?>
@@ -16,7 +17,14 @@ $stmt = $pdo->query($sql);
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="mb-4">Medicamentos Cadastrados</h1>
+        <h1 class="mb-4 text-center">Medicamentos Cadastrados</h1>
+        <div class="text-center mb-4">
+            <form action="./pesquisar.php" method="POST" class="form-inline justify-content-center">
+                <input type="text" name="nome_medicamento" placeholder="Nome do Medicamento" required class="form-control mr-2">
+                <button type="submit" class="btn btn-primary">Buscar</button>
+            </form>
+        </div>
+
         <table class="table table-bordered">
             <thead>
                 <tr>
@@ -34,7 +42,7 @@ $stmt = $pdo->query($sql);
                 <tr>
                     <td><?php echo $row['id']; ?></td>
                     <td><?php echo $row['produto']; ?></td>
-                    <td><?php echo $row['preco']; ?></td>
+                    <td><?php echo number_format($row['preco'], 2, ',', '.'); ?></td> <!-- Formatação de preço -->
                     <td><?php echo $row['quantidade']; ?></td>
                     <td><?php echo $row['categoria']; ?></td>
                     <td><?php echo $row['data_validade']; ?></td>
